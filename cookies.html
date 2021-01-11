@@ -29,39 +29,43 @@
   <link rel="stylesheet" href="styles.css"
 </head>
 <body>
+  <br>
+  <br>
+  You got:
+  <span id="text"> 0 </span>
+
+  <script>
+    function add(){
+      cookiecount = cookiecount + 1
+      update()
+    }
+  </script>
+  Cookies
+  <br>
+  <br>
+  <button type="button" onClick="add()">Click for a Cookie</button>
+  <br>
+  <br>
   <p id="cookiespersecond">You are gaining 0 cookies per second automatically.<p>
-    <button type="button" onClick="add()">Click for a Cookie</button>
-
     <br>
-    <br>
-    You got:
-    <span id="text"> 0 </span>
-
-    <script>
-      function add(){
-        cookiecount = cookiecount + 1
-        update()
-      }
-    </script>
-    Cookies
-    <br><br>
-
-    <button type="button" onClick="save()">Save</button>
-    <button type="button" onClick="load()">Load</button>
-    <br><br>
     <p id="amountmultiplier">Multiplier upgrade x2</p>
     <button type="button" onClick="buymultiplier()"><span id="amountmultiplier2">x2<span></button>
       <p id="costmultiplier">200 Cookies</p>
       <p id="currentmultiplier">Your current multiplier is x1</p>
-
-
+      <br>
+      <br>
       <button type="button" onClick="buyautoclick()">Buy an Auto-Clicker</button>
       <p id="costautoclick"> 12 Cookies</p>
       <p id="amountautoclick"> You own 0 auto-clicker(s).</p>
       <br>
+      <br>
       <button type="button" onClick="buyfarm()">Buy a Farm</button>
       <p id="costfarm"> 15 Cookies</p>
       <p id="amountfarm">You own 0 farm(s).</p>
+      <br>
+      <br>
+      <button type="button" onClick="save()">Save</button>
+      <button type="button" onClick="load()">Load</button>
 
       <script>
         function save(){
