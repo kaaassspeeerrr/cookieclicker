@@ -1,6 +1,6 @@
 <script>
   function update() {
-    document.getElementById('text').value = cookiecount;
+    document.getElementById('text').innerHTML = cookiecount;
     document.title = cookiecount + " Cookies";
     document.getElementById('amountmultiplier').innerHTML = "Multiplier upgrade x" + (multiplier+1);
     document.getElementById('amountmultiplier2').innerHTML = "x" + (multiplier+1);
@@ -35,7 +35,7 @@
     <br>
     <br>
     You got:
-    <input type="text" id="text" disabled style= text-align:center value=0>
+    <span id="text"> 0 </span>
 
     <script>
       function add(){
